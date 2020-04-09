@@ -400,11 +400,11 @@
   /***/
   function _(module, exports, __webpack_require__) {
     __webpack_require__(
-    /*! C:\Users\bmayorga\Documents\Proyectos\chat02\node_modules\bootstrap\dist\css\bootstrap.min.css */
+    /*! C:\Users\bmayorga\Documents\Proyectos\chat01\node_modules\bootstrap\dist\css\bootstrap.min.css */
     "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 
     module.exports = __webpack_require__(
-    /*! C:\Users\bmayorga\Documents\Proyectos\chat02\src\styles.css */
+    /*! C:\Users\bmayorga\Documents\Proyectos\chat01\src\styles.css */
     "./src/styles.css");
     /***/
   }
