@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Socket } from 'ngx-socket-io';
+import * as io from 'socket.io-client';
 import { Observable } from 'rxjs';
 import { Mensaje } from 'src/app/objects/clases';
  
@@ -8,11 +8,16 @@ import { Mensaje } from 'src/app/objects/clases';
   providedIn: 'root'
 })
 export class UsersService {
+  private socket;
+  private ws_url = 'http://localhost:3000/';
 
-  constructor(private socket: Socket) { }
+  constructor() {
+    this.socket = io(this.ws_url); 
+   }
  
   sendMessage(msg: Mensaje){
-      this.socket.emit("chat message", msg);
+       
+    this.socket.emit("chat message", msg);
   }
 
 
