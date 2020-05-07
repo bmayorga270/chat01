@@ -9,7 +9,7 @@ import { Mensaje } from 'src/app/objects/clases';
 })
 export class UsersService {
   private socket;
-  private ws_url = 'http://localhost:3000/';
+  private ws_url = 'http://13.92.96.77/';
 
   constructor() {
     this.socket = io(this.ws_url); 

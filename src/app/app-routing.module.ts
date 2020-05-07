@@ -7,16 +7,20 @@ import { AdminComponent } from './chat/admin/admin.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'user/consultas_externas',
     pathMatch: 'full'
   },
   {
-    path: 'home/:usr',
+    path: 'chat/user/:usr',
     component: UsersComponent
   },
   {
-    path: 'admin',
+    path: 'chat/admin',
     component: AdminComponent
+  },
+  {
+    path: '**',
+    redirectTo:  'chat/user/consultas_externas',
   }
 ];
 

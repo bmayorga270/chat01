@@ -76,4 +76,11 @@ export class AdminComponent implements OnInit {
     this.mensaje = '';   
   }
 
+
+  onkeyEnvio(event, mensaje ){
+    if(event.key === "Enter"){
+      this.enviarMensaje(mensaje);
+    }
+  }
+
 }

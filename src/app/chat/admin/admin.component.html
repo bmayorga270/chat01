@@ -63,7 +63,7 @@
                 </div>
                 <div class="panel-footer">
                     <div class="input-group">
-                        <input id="btn-input" type="input" class="form-control input-sm"  placeholder="Type your message here..."   [(ngModel)] = "mensaje"/>
+                        <input id="btn-input" type="input" class="form-control input-sm" (keyup)="onkeyEnvio($event, mensaje)"  placeholder="Type your message here..."   [(ngModel)] = "mensaje"/>
                         <span class="input-group-btn">
                             <button class="btn btn-warning btn-sm" id="btn-chat" (click)="enviarMensaje(mensaje)"> 
                                 Send</button>

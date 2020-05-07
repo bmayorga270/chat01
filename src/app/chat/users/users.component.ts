@@ -45,4 +45,10 @@ export class UsersComponent implements OnInit {
     
   }
 
+  onkeyEnvio(event, mensaje ){
+    if(event.key === "Enter"){
+      this.enviarMensaje(mensaje);
+    }
+  }
+
 }
